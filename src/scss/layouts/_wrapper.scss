@@ -1,0 +1,17 @@
+@use '../abstracts';
+
+.wrapper {
+    padding-inline: 6.25rem;
+}
+
+@media (max-width: 48rem) {
+    .wrapper {
+        padding-inline: 3.75rem;
+    }
+}
+
+@media (max-width: 25rem) {
+    .wrapper {
+        padding-inline: 1rem;
+    }
+}
