@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+}

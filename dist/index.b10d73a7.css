@@ -1,2 +1,98 @@
+html {
+  font-size: 100%;
+}
 
+*, :before, :after {
+  box-sizing: border-box;
+  font-size: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 20rem;
+}
+
+input, button, textarea {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a, a:link, a:visited, a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img, picture, svg, video {
+  shape-margin: .5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  font-style: italic;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+  }
+}
+
+.wrapper {
+  padding-inline: 6.25rem;
+}
+
+@media (width <= 48rem) {
+  .wrapper {
+    padding-inline: 3.75rem;
+  }
+}
+
+@media (width <= 25rem) {
+  .wrapper {
+    padding-inline: 1rem;
+  }
+}
+
+.navigation {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  display: flex;
+}
+
+nav {
+  align-items: center;
+  gap: 2.25rem;
+  display: flex;
+}
+
+.logo {
+  align-items: center;
+  gap: .75rem;
+  display: flex;
+}
+
+.btn {
+  padding-block: .25rem;
+}
 /*# sourceMappingURL=index.b10d73a7.css.map */
