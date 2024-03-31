@@ -1,17 +1,22 @@
 @use '../abstracts';
 
 .wrapper {
-    padding-inline: 6.25rem;
+    --content-max-width: 107.25rem;
+    --padding-inline: calc(6.25rem * 2);
+    width: min(var(--content-max-width), 100% - var(--padding-inline));
+    // padding-inline: 6.25rem;
+
+    margin-inline: auto;
 }
 
 @media (max-width: 48rem) {
     .wrapper {
-        padding-inline: 3.75rem;
+        --padding-inline: calc(3.75rem * 2);
     }
 }
 
 @media (max-width: 25rem) {
     .wrapper {
-        padding-inline: 1rem;
+        --padding-inline: calc(1rem * 2);
     }
 }

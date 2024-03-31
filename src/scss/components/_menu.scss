@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+.menu {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.125rem;
+    border: 0.0625rem solid hsl(0, 0, 27, 100%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.menu span {
+    width: 0.625rem;
+    height: 0.125rem;
+    background-color: hsl(0, 0, 27, 100%);
+}
+
+@media (max-width: 48rem) {
+    .menu {
+        display: flex;
+    }
+}

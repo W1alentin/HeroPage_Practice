@@ -12,3 +12,9 @@ nav {
     align-items: center;
     gap: 2.25rem;
 }
+
+@media (max-width: 48rem) {
+    nav {
+        display: none;
+    }
+}
